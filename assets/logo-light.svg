@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" role="img" aria-label="Alejandro Tavera Reyes">
+  <defs><linearGradient id="ll" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+  <g transform="translate(2,5)"><path d="M19 0 L38 38 L29.5 38 L19 15 L8.5 38 L0 38 Z" fill="url(#ll)"/><rect x="12" y="26" width="14" height="5.5" fill="#3b82f6"/></g>
+  <text x="52" y="22" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="19" font-weight="700">Alejandro Tavera Reyes</text>
+  <text x="53" y="37" fill="#cbd5e6" font-family="Inter, Arial, sans-serif" font-size="8" letter-spacing="2.6">LEGAL&#160;&#183;&#160;AI&#160;&#183;&#160;WORKFLOWS</text>
+</svg>

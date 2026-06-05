@@ -17,11 +17,11 @@
       <img class="logo logo-dark" src="assets/logo-dark.svg" alt="Alejandro Tavera Reyes">
     </a>
     <ul class="nav-links">
-      <li><a href="manifesto/">The Manifesto</a></li>
-      <li><a href="capabilities/">Capabilities</a></li>
-      <li><a href="about/">About</a></li>
-      <li><a href="intelligence-hub/">Intelligence Hub</a></li>
-      <li class="nav-cta"><a class="btn btn-primary" href="https://cal.com/alejandrotr">Schedule a call</a></li>
+      <li><a class="nl" href="manifesto/">The Manifesto</a></li>
+      <li><a class="nl" href="capabilities/">Capabilities</a></li>
+      <li><a class="nl" href="about/">About</a></li>
+      <li><a class="nl" href="intelligence-hub/">Intelligence Hub</a></li>
+      <li class="nav-cta"><a class="btn" href="https://cal.com/alejandrotr">Schedule a call</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
@@ -30,8 +30,12 @@
 <main>
   <!-- HERO -->
   <section class="hero">
-    <span class="video-flag">Desert placeholder — swap with your own video</span>
-    <div class="hero-media"><img src="assets/desert-1.jpg" alt="" aria-hidden="true"></div>
+    <span class="video-flag">Desert placeholder — drop assets/hero.mp4 to go live</span>
+    <div class="hero-media">
+      <video poster="assets/desert-1.jpg" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="container">
       <h1>You didn't open a practice to manage <em>busywork</em></h1>
       <p class="hero-sub">You opened it to win. I build the AI systems that let you.</p>
@@ -66,17 +70,38 @@
     </div>
   </section>
 
-  <!-- FEATURE BAND -->
+  <!-- FEATURE BAND: heading top-left, support bottom-left, credit bottom-right -->
   <section class="feature">
     <div class="feature-media"><img src="assets/desert-2.jpg" alt="" aria-hidden="true" loading="lazy"></div>
-    <div class="container">
-      <div class="inner">
-        <h2>Go beyond busywork. Move faster. Multiply value.</h2>
-        <p>I don't just bolt AI onto your firm — I rebuild how it runs. You're building something significant, yet you're often served by vendors who bill hours instead of delivering outcomes. You need a strategic counterweight: a partner who gives you the unvarnished truth and makes speed your competitive advantage.</p>
-        <div class="btn-row"><a class="btn btn-primary" href="capabilities/">Discover hidden leverage <span class="arw">›</span></a></div>
+    <div class="container feature-inner">
+      <h2>Go beyond busywork. Move faster. Multiply value.</h2>
+      <div class="feature-foot">
+        <p class="fl">I don't just bolt AI onto your firm. I rebuild how it runs.</p>
+        <p>You're building something significant, yet you're often served by vendors who bill hours instead of delivering outcomes. You need a strategic counterweight — a partner who gives you the unvarnished truth and makes speed your competitive advantage.</p>
+        <div class="btn-row"><a class="btn btn-light" href="capabilities/">Discover hidden leverage <span class="arw">›</span></a></div>
       </div>
     </div>
     <div class="credit"><b>Alejandro Tavera Reyes</b><span>Legal AI Consultant</span></div>
+  </section>
+
+  <!-- FEATURED VIDEO (your latest Short) -->
+  <section class="vid">
+    <div class="container">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Featured</p>
+          <h2>Legal AI, explained without the hype</h2>
+          <p>I break down where legal AI is actually heading — the tools, the players, and what it means for your firm — on my channel. Here's the latest.</p>
+          <div class="btn-row"><a class="btn btn-outline" href="https://www.youtube.com/@alejandrotaverareyes" target="_blank" rel="noopener">Watch on YouTube <span class="arw">›</span></a></div>
+        </div>
+        <div>
+          <div class="short-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/fDhfNirwVl4" title="3 Major AI legal players, more opportunities?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <p class="short-note">“3 Major AI legal players, more opportunities?” · @alejandrotaverareyes</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- PILLARS -->
@@ -120,14 +145,14 @@
     </div>
   </section>
 
-  <!-- BLUEPRINT BAND -->
+  <!-- BLUEPRINT BAND (right-aligned block) -->
   <section class="feature right">
     <div class="feature-media"><img src="assets/desert-3.jpg" alt="" aria-hidden="true" loading="lazy"></div>
-    <div class="container">
+    <div class="container feature-inner">
       <div class="inner">
         <h2>The Blueprint for Scale</h2>
         <p>Growth requires more than tools; it requires architecture. I replace the "we'll figure out AI later" default with a system designed to drive your revenue — not add to your to-do list. Your stack should be the engine that grows the firm, not the friction that slows it down.</p>
-        <div class="btn-row"><a class="btn btn-primary" href="https://cal.com/alejandrotr">Get started <span class="arw">›</span></a></div>
+        <div class="btn-row"><a class="btn btn-light" href="https://cal.com/alejandrotr">Get started <span class="arw">›</span></a></div>
       </div>
     </div>
   </section>
@@ -172,15 +197,28 @@
 </main>
 
 <footer class="site-footer">
+  <img class="foot-watermark" src="assets/mark.svg" alt="" aria-hidden="true">
   <div class="container">
     <div class="foot-grid">
       <div class="foot-brand">
         <img class="logo" src="assets/logo-light.svg" alt="Alejandro Tavera Reyes">
         <p>Legal AI workflows consultant and CTO of Amphs AI. I turn AI into revenue for law firms — visibility, automation, and audience.</p>
+        <div class="foot-contact">
+          <a href="mailto:sales@amphs.ai">sales@amphs.ai</a>
+          <p>Remote · Working with firms worldwide</p>
+        </div>
       </div>
       <div class="foot-col"><h4>Build</h4><a href="capabilities/">Capabilities</a><a href="contact/">Contact</a></div>
       <div class="foot-col"><h4>Learn</h4><a href="intelligence-hub/">Intelligence Hub</a><a href="manifesto/">The Manifesto</a><a href="about/">About</a></div>
-      <div class="foot-col"><h4>Connect</h4><a href="https://www.linkedin.com/in/alejandro-tavera-reyes-49116b320/" target="_blank" rel="noopener">LinkedIn</a><a href="#" rel="noopener">Instagram</a><a href="#" rel="noopener">TikTok</a></div>
+      <div class="foot-col">
+        <h4>Follow</h4>
+        <div class="foot-social">
+          <a href="https://www.linkedin.com/in/alejandro-tavera-reyes-49116b320/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V24H8V8z"/></svg></a>
+          <a href="https://www.youtube.com/@alejandrotaverareyes" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+          <a href="#" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.6c-1.3.1-2.5-.3-3.6-1v6.1c0 3.4-2.7 5.9-5.9 5.4-2.6-.4-4.3-2.6-4.1-5.2.2-2.4 2.3-4.3 4.7-4.2.3 0 .5 0 .8.1v2.7c-.3-.1-.6-.2-.9-.2-1.2 0-2.1 1-2 2.2.1 1.1 1 1.9 2.1 1.8 1.1-.1 1.9-1 1.9-2.1V3h3z"/></svg></a>
+        </div>
+      </div>
     </div>
     <div class="foot-bottom"><span>© 2026 Alejandro Tavera Reyes. All rights reserved.</span><a href="privacy-policy/">Privacy Policy</a></div>
   </div>
